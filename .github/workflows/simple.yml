@@ -13,10 +13,7 @@ jobs:
               run: |
                 echo "Welcome to GitHub Actions"
                 pwd
-                Shell-commands:
-                    runs-on: ubuntu-20.04
-                    steps:
-                        - name: checkout
+
     python:
         runs-on: ubuntu-20.04
         steps:
