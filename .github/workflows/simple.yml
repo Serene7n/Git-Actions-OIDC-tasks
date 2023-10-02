@@ -13,14 +13,24 @@ jobs:
               run: |
                 echo "Welcome to GitHub Actions"
                 pwd
+                Shell-commands:
+                    runs-on: ubuntu-20.04
+                    steps:
+                        - name: checkout
+    python:
+        runs-on: ubuntu-20.04
+        steps:
+            - name: checkout
+              uses: actions/checkout@v3
+
             - name: setup python 3.10 
               uses: actions/setup-python@v4
               with:
                 python-version: 3
             
             - name: Run Python script
-              run: Hello-Python.py
-              shell: python
+              run: python3 Hello-Python.py
+              
                
     run-windows-commands:
         runs-on: windows-latest
