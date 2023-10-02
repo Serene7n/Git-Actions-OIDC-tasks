@@ -19,8 +19,7 @@ jobs:
                 python-version: 3
             
             - name: Run Python script
-              run: |
-                print("Hello Python")
+              run: Hello-Python.py
                
     run-windows-commands:
         runs-on: windows-latest
