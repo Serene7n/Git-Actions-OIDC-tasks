@@ -6,8 +6,9 @@ jobs:
     Shell-commands:
         runs-on: ubuntu-20.04
         steps:
-            - uses: actions/checkout@v3
             - name: checkout
+              uses: actions/checkout@v3
+            - name: echo String
               run: |
                 echo "Welcome to GitHub Actions"
                 pwd
