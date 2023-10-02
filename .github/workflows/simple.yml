@@ -15,7 +15,7 @@ jobs:
             - name: python command
               run: |
                 import platform
-                print{platform.processor((0))
+                print(platform.processor())
     run-windows-commands:
         runs-on: windows-latest
         steps:
