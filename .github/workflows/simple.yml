@@ -29,7 +29,7 @@ jobs:
                 python-version: 3
             
             - name: Run Python script
-              run: python3 Hello-Python.py
+              run: python Hello-Python.py
               
                
     run-windows-commands:
