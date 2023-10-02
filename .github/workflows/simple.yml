@@ -12,11 +12,14 @@ jobs:
               run: |
                 echo "Welcome to GitHub Actions"
                 pwd
-            - name: python command
-              run: |
-                import platform
-                print("Hello Python")
-              shell: python
+            - name: setup python 3.10 
+              uses: actions/setup-python@v4
+              with:
+                python-version: 3.10
+            
+            - name: Run Python script
+              run: print("Hello Python")
+               
     run-windows-commands:
         runs-on: windows-latest
         steps:
